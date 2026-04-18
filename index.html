@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Third Street Barber Shop</title>
+  <link rel="icon" type="image/png" href="images/seecor.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <div class="logo-top" style="color: #fff;">THIRD STREET</div>
+      <div class="logo-sub" style="color: var(--orange);">BARBER SHOP</div>
+    </div>
+    <nav class="nav-links">
+      <a href="#home" class="active">HOME</a>
+      <a href="#services">SERVICES</a>
+      <a href="#products">PRODUCTS</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#feedbacks">FEEDBACKS</a>
+      <a href="#stylists">STYLISTS</a>
+      <a href="#booking" class="btn-book">BOOK NOW</a>
+    </nav>
+    <button class="hamburger"><i data-lucide="menu"></i></button>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-text">
+        <span class="bg-word">THIRD</span>
+        <span class="bg-word">STREET</span>
+    </div>
+    <!-- Floating tools -->
+    <div class="hero-image-wrap">
+      <img src="images/Hero Barber.png" class="hero-barber" alt="Barber">
+      <div class="hero-fade-bottom"></div>
+    </div>
+    <div class="floating brush-left"><img src="images/brush.png" style="width: 180px; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.8));"></div>
+    <div class="floating scissors-right"><img src="images/seecor.png" style="width: 220px; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.8)); transform: rotate(-30deg);"></div>
+    <div class="floating brush-top"><img src="images/brush.png" style="width: 150px; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.8)); transform: rotate(45deg);"></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="section-title">
+      <h4>MAN'S GROOMING</h4>
+      <h2>SERVICES</h2>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-col">
+        <div class="service-item">
+          <div class="s-icon"><i data-lucide="scissors"></i></div>
+          <h3>HAIRCUTS</h3>
+          <p>Whether you're looking for a traditional cut or something modern, our skilled barbers will give you the look you want.</p>
+          <div class="price">STARTING AT<br><span>$30</span></div>
+        </div>
+        <div class="service-item">
+          <div class="s-icon"><i data-lucide="smile"></i></div>
+          <h3>FACIAL TREATMENTS</h3>
+          <p>Treat your skin to a revitalizing facial that cleanses, exfoliates, and hydrates for a healthy glow.</p>
+          <div class="price">STARTING AT<br><span>$40</span></div>
+        </div>
+      </div>
+      
+      <div class="service-col highlight-col">
+        <div class="service-item highlight-box">
+          <div class="s-icon"><i data-lucide="droplet"></i></div>
+          <h3>SHAVES</h3>
+          <p>Experience the luxury of a professional shave that leaves your skin feeling smooth and refreshed.</p>
+          <div class="price">STARTING AT<br><span>$20</span></div>
+        </div>
+        <div class="service-item">
+          <div class="s-icon"><i data-lucide="wind"></i></div>
+          <h3>HAIR STYLING</h3>
+          <p>From everyday styles to special event looks, our stylists will create the perfect hairstyle for any occasion.</p>
+          <div class="price">STARTING AT<br><span>$25</span></div>
+        </div>
+      </div>
+
+      <div class="service-col">
+        <div class="service-item">
+          <div class="s-icon"><i data-lucide="user"></i></div>
+          <h3>BEARD TRIMS</h3>
+          <p>Our barbers are experts in shaping and maintaining beards, ensuring you always look your best.</p>
+          <div class="price">STARTING AT<br><span>$15</span></div>
+        </div>
+        <div class="service-item">
+          <div class="s-icon"><i data-lucide="activity"></i></div>
+          <h3>SCALP TREATMENTS</h3>
+          <p>Our scalp treatments are designed to address common issues and promote healthier, stronger hair growth.</p>
+          <div class="price">STARTING AT<br><span>$35</span></div>
+        </div>
+      </div>
+      <div class="floating brush-bottom"><img src="images/brush.png" style="width: 100px; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.8)); transform: rotate(-15deg);"></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="products">
+    <div class="section-title">
+      <h4>PREMIUM QUALITY</h4>
+      <h2>GROOMING PRODUCTS</h2>
+    </div>
+    
+    <div class="products-carousel">
+      
+      <div class="carousel-viewport" style="overflow: hidden; max-width: 814px; padding: 20px 0;">
+        <div class="carousel-track" style="display: flex; gap: 2rem; transition: transform 0.3s ease;">
+          <div class="product-item">
+            <div class="border-shape"></div>
+            <img src="images/Booming 1.jpg" class="darkened-img" alt="Product 1">
+          </div>
+          <div class="product-item active-product">
+            <div class="orange-bg-shape"></div>
+            <img src="images/booming 2.jpg" class="darkened-img" alt="Product 2">
+          </div>
+          <div class="product-item">
+            <div class="border-shape"></div>
+            <img src="images/booming 3.webp" class="darkened-img" alt="Product 3">
+          </div>
+          <div class="product-item">
+            <div class="border-shape"></div>
+            <img src="images/booming 4.jpg" class="darkened-img" alt="Product 4">
+          </div>
+          <div class="product-item">
+            <div class="border-shape"></div>
+            <img src="images/booming 5.jpg" class="darkened-img" alt="Product 5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery">
+    <div class="gallery-header-box">
+      <h2>TRANSFORMATION GALLERY</h2>
+      <p>See The Impressive Results Of Those Who Have Already Secured Our Expert Grooming Services.</p>
+    </div>
+    
+    <div class="gallery-wrapper">
+      <div class="gallery-slider">
+        <div class="gallery-item-wrap"><div class="g-img"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=400&q=80" alt="Before After 1"></div></div>
+        <div class="gallery-item-wrap active"><div class="g-img"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=400&q=80" alt="Before After 2"></div></div>
+        <div class="gallery-item-wrap"><div class="g-img"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=400&q=80" alt="Before After 3"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEEDBACKS -->
+  <section id="feedbacks" class="feedbacks">
+    <div class="section-title">
+      <h4>What Our Clients are Saying</h4>
+      <h2>FEEDBACKS</h2>
+    </div>
+    <div class="feedbacks-container">
+      <img src="images/Barber chair.png" class="center-chair" alt="Barber Chair">
+      <div class="feedback-card f-top-left">
+        <p>Absolutely the best haircut I've ever had. The barbers are true professionals and really listen to what you want. Highly recommend!</p>
+        <strong>John D</strong>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="feedback-card f-top-right">
+        <p>Great atmosphere and even better service. I always leave feeling refreshed and looking sharp. A must-visit for anyone serious about grooming.</p>
+        <strong>Alex P</strong>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="feedback-card f-bot-left">
+        <p>The facial treatment made a huge difference. My skin feels smooth and looks healthier than ever. Thanks to the amazing team!</p>
+        <strong>Chris R</strong>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="feedback-card f-bot-right">
+        <p>The beard trim and shave were exceptional. The attention to detail and quality of service are unmatched.</p>
+        <strong>Michael S</strong>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
+      <a href="https://maps.app.goo.gl/EKiEyM9uUiP1Cph68" target="_blank" class="btn-review">Leave A Review on Google</a>
+    </div>
+  </section>
+
+  <!-- BLOG POSTS -->
+  <section class="blog" id="blog">
+    <div class="section-title">
+      <h4>Tales from the Barber Shop</h4>
+      <h2>RECENT BLOG POSTS</h2>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card border-card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?w=500&q=80" alt="Blog 1"></div>
+        <div class="blog-content">
+          <h5>THE ULTIMATE GUIDE TO BEARD CARE</h5>
+          <p>Discover the best practices and products to keep your beard looking sharp and feeling soft. From washing techniques to styling tips, we cover it all.</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="blog-card highlight-blog">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&q=80" alt="Blog 2"></div>
+        <div class="blog-content">
+          <h5>TOP HAIRCUTS FOR 2024</h5>
+          <p>Looking for a new style? Check out our list of the top haircuts for men in 2024. Find the perfect cut to match your personality and lifestyle.</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="blog-card border-card">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=500&q=80" alt="Blog 3"></div>
+        <div class="blog-content">
+          <h5>BENEFITS OF REGULAR SCALP TREATMENTS</h5>
+          <p>Understand why scalp treatments are crucial for hair health. Learn about the different types of treatments and how they can help you achieve stronger, healthier hair.</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STYLISTS -->
+  <section id="stylists" class="stylists">
+    <div class="section-title">
+      <h4>The best barbers in the town</h4>
+      <h2>MEET OUR STYLISTS</h2>
+    </div>
+
+    <!-- Stylist 1 -->
+    <div class="stylist-row row-right">
+      <div class="stylist-img-wrap">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" alt="Jake Anderson">
+      </div>
+      <div class="stylist-info">
+        <h3>JAKE ANDERSON</h3>
+        <span class="role">Master Barber</span>
+        <p>With over 15 years in the industry, Jake is known for his precision and creativity. Whether you're looking for a timeless classic or a trendy new look, Jake's expertise ensures you leave with a style that's uniquely yours.<br>Jake's attention to detail and passion for barbering is unmatched. Always leaves me looking sharp!</p>
+      </div>
+    </div>
+    
+    <!-- Stylist 2 -->
+    <div class="stylist-row row-left">
+      <div class="stylist-info">
+        <h3>MARCUS LEE</h3>
+        <span class="role">Hair Specialist</span>
+        <p>Marcus is passionate about hair health and style. With his innovative techniques and in-depth knowledge of scalp care, he provides both stylish cuts and effective treatments for a healthier look.<br>Marcus transformed my hair and gave great advice on maintaining it. Highly recommend his services!</p>
+      </div>
+      <div class="stylist-img-wrap">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&q=80" alt="Marcus Lee">
+      </div>
+    </div>
+
+    <!-- Stylist 3 -->
+    <div class="stylist-row row-right">
+      <div class="stylist-img-wrap">
+        <img src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?w=500&q=80" alt="Michael Carter">
+      </div>
+      <div class="stylist-info">
+        <h3>MICHAEL CARTER</h3>
+        <span class="role">Senior Barber</span>
+        <p>Michael combines technical skill with a warm, friendly approach. He excels in beard grooming and traditional shaving techniques, delivering a perfect finish every time.<br>Michael's beard trims are the best I've ever had. He's professional and makes the experience enjoyable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="booking">
+     <div class="booking-header">
+       <h2>BOOK YOUR APPOINTMENT</h2>
+       <p>Convenient, easy, and tailored just for you. Reserve your spot today and enjoy a top-notch grooming experience.</p>
+     </div>
+     
+     <div class="booking-form-box">
+       <form>
+         <div class="form-row">
+           <input type="text" placeholder="Full Name" required>
+           <input type="tel" placeholder="Phone Number" required>
+         </div>
+         <div class="form-row">
+            <select required>
+              <option value="" disabled selected hidden>Date</option>
+              <option>Today</option>
+              <option>Tomorrow</option>
+            </select>
+            <select required>
+              <option value="" disabled selected hidden>Time</option>
+              <option>Morning</option>
+              <option>Afternoon</option>
+            </select>
+         </div>
+         <div class="form-row">
+            <select required>
+              <option value="" disabled selected hidden>Service</option>
+              <option>Haircut</option>
+              <option>Beard Trim</option>
+            </select>
+            <select required>
+              <option value="" disabled selected hidden>Choose a Barber</option>
+              <option>Jake Anderson</option>
+              <option>Marcus Lee</option>
+              <option>Michael Carter</option>
+            </select>
+         </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+             <button type="submit" style="flex: 1; min-width: 200px;">Make An Appointment</button>
+             <a href="tel:+15593205580" style="flex: 1; min-width: 200px; display: flex; align-items: center; justify-content: center; background: #fff; color: #000; font-family: var(--font-heading); font-size: 1.2rem; font-weight: bold; text-decoration: none; text-transform: uppercase; border: none; cursor: pointer; transition: 0.3s; padding: 1.2rem;">Call Us</a>
+          </div>
+       </form>
+       <img src="images/seecor.png" class="floating scissors-booking" alt="scissors" style="width: 180px; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.8));">
+     </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-cols">
+      <div class="f-col">
+        <h4>Contact</h4>
+        <p>3263 E Cesar Chavez Blvd,<br>Fresno, CA 93702, United States</p>
+        <p>+1 559-320-5580</p>
+        <p>info@thirdstreetbarbershop.com</p>
+        <div class="socials" style="margin-top: 1.5rem;">
+          <a href="https://www.facebook.com/pages/Third-Street-Barber-Shop/325874927602719" target="_blank" style="color: var(--orange); display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-weight: bold;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+            </svg>
+            Follow on Facebook
+          </a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Business Hours</h4>
+        <p>Mon - Wed: 10:00 AM - 7:00 PM</p>
+        <p>Thu - Fri: 10:30 AM - 7:00 PM</p>
+        <p>Saturday: 9:30 AM - 6:00 PM</p>
+        <p>Sunday: 9:30 AM - 4:00 PM</p>
+      </div>
+      <div class="f-col">
+        <h4>Subscribe</h4>
+        <p>Subscribe our newsletter to get latest news and updates from us.</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter Your Email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
