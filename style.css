@@ -684,5 +684,35 @@ section {
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hamburger { display: block; }
-  .outline-text { font-size: 20vw; }
+  
+  /* Hero Refinement */
+  .hero { min-height: 80vh; padding-top: 120px; }
+  .bg-word { font-size: 15vw; }
+  .bg-word:nth-child(1) { margin-right: 2vw; }
+  .bg-word:nth-child(2) { margin-left: 5vw; }
+  .hero-barber { height: 70vh; transform: translateX(0); }
+  
+  /* Floating Elements - Hide or scale down */
+  .floating img { width: 80px !important; opacity: 0.6; }
+  .brush-left { left: 2%; top: 20%; }
+  .scissors-right { right: 2%; top: 50%; display: none; } /* Hide some to reduce clutter */
+  .brush-top { display: none; }
+  .brush-bottom { display: none; }
+  .scissors-booking { display: none; }
+
+  /* Section Titles */
+  h2 { font-size: 2.5rem; }
+  
+  /* Services */
+  .service-item { padding: 1.5rem; }
+  
+  /* Products & Gallery Centering */
+  .products-carousel { flex-direction: column; }
+  .carousel-viewport { max-width: 100% !important; }
+  .carousel-track { gap: 1rem; }
+  .product-item { width: 220px; min-width: 220px; height: 320px; }
+  
+  .gallery-wrapper { flex-direction: column; }
+  .gallery-slider { flex-direction: column; align-items: center; }
+  .gallery-item-wrap { width: 280px; height: 280px; }
 }
