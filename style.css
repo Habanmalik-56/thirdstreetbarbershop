@@ -20,7 +20,7 @@ body {
   /* Brick Background Pattern */
   background-image: 
     linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.75)),
-    url('images/bricks-wallpaper.png');
+    url('site-assets/bricks-wallpaper.png');
   background-size: cover;
   background-attachment: fixed;
   color: var(--text-muted);
@@ -277,7 +277,7 @@ section {
 
 /* PRODUCTS */
 .products {
-  background: linear-gradient(to right, rgba(20,20,20,0.9), rgba(50,30,10,0.9)), url('images/bricks-wallpaper.png');
+  background: linear-gradient(to right, rgba(20,20,20,0.9), rgba(50,30,10,0.9)), url('site-assets/bricks-wallpaper.png');
   background-blend-mode: overlay;
   margin: 0 5%;
   border-radius: 20px 20px 0 0;
