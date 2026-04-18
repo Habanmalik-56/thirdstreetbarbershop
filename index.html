@@ -30,6 +30,17 @@
     </nav>
     <button class="hamburger"><i data-lucide="menu"></i></button>
   </header>
+  
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav">
+    <a href="#home">HOME</a>
+    <a href="#services">SERVICES</a>
+    <a href="#products">PRODUCTS</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#feedbacks">FEEDBACKS</a>
+    <a href="#stylists">STYLISTS</a>
+    <a href="#booking" class="btn-book">BOOK NOW</a>
+  </div>
 
   <!-- HERO -->
   <section id="home" class="hero">
@@ -227,10 +238,7 @@
   <section id="stylists" class="stylists">
     <div class="section-title">
       <h4>The best barbers in the town</h4>
-      <h2>MEET OUR STYLISTS</h2>
-    </div>
-
-    <!-- Stylist 1 -->
+         <!-- Stylist 1 -->
     <div class="stylist-row row-right">
       <div class="stylist-img-wrap">
         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" alt="Jake Anderson">
@@ -238,7 +246,8 @@
       <div class="stylist-info">
         <h3>JAKE ANDERSON</h3>
         <span class="role">Master Barber</span>
-        <p>With over 15 years in the industry, Jake is known for his precision and creativity. Whether you're looking for a timeless classic or a trendy new look, Jake's expertise ensures you leave with a style that's uniquely yours.<br>Jake's attention to detail and passion for barbering is unmatched. Always leaves me looking sharp!</p>
+        <p class="bio">With over 15 years in the industry, Jake is known for his precision and creativity. Whether you're looking for a timeless classic or a trendy new look, Jake's expertise ensures you leave with a style that's uniquely yours.</p>
+        <blockquote class="testimonial">"Jake's attention to detail and passion for barbering is unmatched. Always leaves me looking sharp!"</blockquote>
       </div>
     </div>
     
@@ -247,13 +256,14 @@
       <div class="stylist-info">
         <h3>MARCUS LEE</h3>
         <span class="role">Hair Specialist</span>
-        <p>Marcus is passionate about hair health and style. With his innovative techniques and in-depth knowledge of scalp care, he provides both stylish cuts and effective treatments for a healthier look.<br>Marcus transformed my hair and gave great advice on maintaining it. Highly recommend his services!</p>
+        <p class="bio">Marcus is passionate about hair health and style. With his innovative techniques and in-depth knowledge of scalp care, he provides both stylish cuts and effective treatments for a healthier look.</p>
+        <blockquote class="testimonial">"Marcus transformed my hair and gave great advice on maintaining it. Highly recommend his services!"</blockquote>
       </div>
       <div class="stylist-img-wrap">
         <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&q=80" alt="Marcus Lee">
       </div>
     </div>
-
+ 
     <!-- Stylist 3 -->
     <div class="stylist-row row-right">
       <div class="stylist-img-wrap">
@@ -262,7 +272,8 @@
       <div class="stylist-info">
         <h3>MICHAEL CARTER</h3>
         <span class="role">Senior Barber</span>
-        <p>Michael combines technical skill with a warm, friendly approach. He excels in beard grooming and traditional shaving techniques, delivering a perfect finish every time.<br>Michael's beard trims are the best I've ever had. He's professional and makes the experience enjoyable.</p>
+        <p class="bio">Michael combines technical skill with a warm, friendly approach. He excels in beard grooming and traditional shaving techniques, delivering a perfect finish every time.</p>
+        <blockquote class="testimonial">"Michael's beard trims are the best I've ever had. He's professional and makes the experience enjoyable."</blockquote>
       </div>
     </div>
   </section>
@@ -275,7 +286,7 @@
      </div>
      
      <div class="booking-form-box">
-       <form>
+       <form id="bookingForm">
          <div class="form-row">
            <input type="text" placeholder="Full Name" required>
            <input type="tel" placeholder="Phone Number" required>
@@ -345,6 +356,7 @@
           <input type="email" placeholder="Enter Your Email" required>
           <button type="submit">Subscribe</button>
         </form>
+        <p style="margin-top: 2rem; font-size: 0.8rem; opacity: 0.5;">&copy; <span id="currentYear"></span> Third Street Barber Shop. All rights reserved.</p>
       </div>
     </div>
   </footer>
