@@ -735,30 +735,35 @@ section {
   .hamburger { display: block; }
   
   /* Hero Refinement */
-  .hero { min-height: 100vh; padding-top: 80px; display: flex; align-items: center; justify-content: center; }
+  .hero { min-height: 90vh; padding-top: 80px; display: flex; align-items: center; justify-content: center; }
   .hero-bg-text { 
     z-index: 1; 
-    top: 35% !important; 
+    top: 40% !important; 
     transform: translateY(-50%);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: -2vh; /* Overlap slightly */
   }
   .bg-word:nth-child(1), .bg-word:nth-child(2) {
     margin: 0 !important;
   }
   .bg-word { 
-    font-size: 20vw !important; 
+    font-size: 15vw !important; /* Fixed size to prevent truncation */
     line-height: 0.8; 
-    color: rgba(255,255,255,0.9);
-    text-shadow: 0 0 20px rgba(0,0,0,0.8), 2px 2px 0 rgba(0,0,0,0.5);
+    color: rgba(255,255,255,0.95);
+    /* Distressed/Classic Effect */
+    text-shadow: 
+      2px 2px 0px rgba(0,0,0,0.2),
+      0 0 15px rgba(0,0,0,0.5),
+      -1px -1px 0 rgba(255,255,255,0.3);
     letter-spacing: -2px;
+    font-weight: 900;
   }
   .hero-barber { 
-    height: 70vh !important; 
+    height: 65vh !important; 
     z-index: 2; 
     transform: none !important; 
     margin-left: auto; 
