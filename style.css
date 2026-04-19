@@ -703,7 +703,9 @@ section {
   .center-chair { 
     display: block !important; 
     position: relative !important; 
-    width: 250px !important; 
+    width: 280px !important; 
+    height: auto !important;
+    object-fit: contain !important;
     margin: 2rem auto !important;
     left: 0 !important;
     top: 0 !important;
@@ -749,15 +751,34 @@ section {
   .stylist-info { order: 2; }
   .testimonial { font-style: italic; color: var(--orange); margin-top: 1rem; font-size: 0.95rem; }
   
-  /* Products & Gallery Centering */
+  /* Products Grid Fix */
   .carousel-viewport { 
     max-width: 100% !important; 
-    padding: 0 !important;
-    overflow-x: auto !important; 
-    -webkit-overflow-scrolling: touch;
+    overflow: visible !important;
+    padding: 0 10px !important;
   }
-  .carousel-track { gap: 1.5rem; padding: 0 10%; }
-  .product-item { width: 260px !important; min-width: 260px !important; }
-  
-  .gallery-item-wrap { width: 300px !important; height: 300px !important; }
+  .carousel-track { 
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important; 
+    padding: 0 !important;
+    transform: none !important;
+  }
+  .product-item { width: 100% !important; min-width: unset !important; }
+  .product-item img { height: 180px !important; }
+
+  /* Gallery Full Visibility Fix */
+  .gallery-slider {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+  }
+  .gallery-item-wrap { 
+    width: 100% !important; 
+    height: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .g-img { height: 320px !important; }
 }
