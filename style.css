@@ -738,28 +738,35 @@ section {
   .hero { min-height: 90vh; padding-top: 80px; display: flex; align-items: center; justify-content: center; }
   .hero-bg-text { 
     z-index: 1; 
-    top: 40% !important; 
+    top: 35% !important; 
     transform: translateY(-50%);
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: -2vh; /* Overlap slightly */
+    padding: 0 20px;
+    gap: 0;
   }
-  .bg-word:nth-child(1), .bg-word:nth-child(2) {
+  .bg-word:nth-child(1) {
     margin: 0 !important;
+    align-self: flex-start;
+    text-align: left;
+  }
+  .bg-word:nth-child(2) {
+    margin: 0 !important;
+    align-self: flex-end;
+    text-align: right;
+    margin-top: -3vh !important; /* Tighten the stack vertical overlap */
   }
   .bg-word { 
-    font-size: 15vw !important; /* Fixed size to prevent truncation */
+    font-size: 16vw !important; /* Perfect size for split layout without truncation */
     line-height: 0.8; 
     color: rgba(255,255,255,0.95);
     /* Distressed/Classic Effect */
     text-shadow: 
-      2px 2px 0px rgba(0,0,0,0.2),
-      0 0 15px rgba(0,0,0,0.5),
-      -1px -1px 0 rgba(255,255,255,0.3);
-    letter-spacing: -2px;
+      2px 2px 0px rgba(0,0,0,0.3),
+      0 0 20px rgba(0,0,0,0.6),
+      -1px -1px 0 rgba(255,255,255,0.4);
+    letter-spacing: -1px;
     font-weight: 900;
   }
   .hero-barber { 
