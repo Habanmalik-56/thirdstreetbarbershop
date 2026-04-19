@@ -118,69 +118,74 @@ a {
   cursor: pointer;
 }
 
-/* HERO */
+/* HERO FIXED LAYOUT */
 .hero {
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 60px;
   overflow: hidden;
 }
-.hero-bg-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.hero-content-fixed {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 1;
-}
-.bg-word:nth-child(1) {
-  margin: 0;
-}
-.bg-word:nth-child(2) {
-  margin: 0;
-}
-.bg-word {
-  font-family: 'Arial Black', Impact, var(--font-heading);
-  font-size: 7vw;
-  font-weight: 900;
-  line-height: 0.85;
-  color: #fff;
-  text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.hero-image-wrap {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  text-align: center;
+  position: relative;
   z-index: 2;
+}
+
+.hero-left, .hero-right {
+  font-family: 'Arial Black', Impact, var(--font-heading);
+  font-size: 14vw;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 0.8;
+  text-shadow: 0 10px 40px rgba(0,0,0,0.9);
+  white-space: nowrap;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-left {
+  right: 55%; /* Positioned slightly behind the center from the left */
+  text-align: right;
+}
+
+.hero-right {
+  left: 55%; /* Positioned slightly behind the center from the right */
+  text-align: left;
+}
+
+.hero-center {
+  z-index: 3;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
+
 .hero-barber {
   height: 95vh;
+  max-width: 50vw;
   object-fit: contain;
-  filter: drop-shadow(0 0 30px rgba(0,0,0,0.8));
-  transform: translateX(-5vw);
+  filter: drop-shadow(0 0 50px rgba(0,0,0,1));
+  position: relative;
 }
+
 .hero-fade-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 15vh;
   background: linear-gradient(to top, var(--bg-dark) 0%, transparent 100%);
-  z-index: 3;
+  z-index: 4;
 }
 .brush-left { top: 15%; left: 8%; }
 .scissors-right { top: 40%; right: 15%; }
@@ -737,45 +742,25 @@ section {
   .nav-links { display: none; }
   .hamburger { display: block; }
   
-  /* Hero Refinement - Plain Text Version */
-  .hero { min-height: 70vh; padding-top: 120px; display: flex; align-items: center; justify-content: center; }
-  .hero-image-wrap { display: none; }
-  .hero-bg-text { 
-    z-index: 1; 
-    position: relative;
-    top: auto !important; 
-    transform: none !important;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0 5%;
+  /* HERO SCALING - FIXED COMPOSITION */
+  .hero { min-height: 60vh; padding-top: 50px; }
+  .hero-left, .hero-right {
+    font-size: 9.5vw !important; /* Scaled down to fit mobile width */
   }
-  .bg-word { 
-    font-size: 14vw !important; 
-    line-height: 0.9 !important; 
-    color: #fff;
-    text-shadow: 0 10px 30px rgba(0,0,0,0.9);
-    text-align: center;
-    white-space: normal !important;
+  .hero-left { right: 52%; }
+  .hero-right { left: 52%; }
+  .hero-barber {
+    height: 60vh !important;
+    max-width: 60vw !important;
   }
   
-  /* Floating Elements Subtle */
-  .floating { opacity: 0.35 !important; }
-  .floating img { width: 110px !important; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5)) !important; }
-  .brush-left { left: 10%; top: 15%; }
-  .scissors-right { display: block !important; top: 20%; right: 10%; }
-  .scissors-left { display: block !important; top: 65%; left: 15%; }
-  .brush-top { display: block !important; top: 75%; right: 15%; }
-  .brush-bottom { display: none; }
-  .scissors-booking { display: none; }
+  /* Subtle Floating Elements on Mobile */
+  .floating { opacity: 0.3 !important; }
+  .floating img { width: 80px !important; }
   .brush-left { left: 5%; top: 15%; }
-  .scissors-right { display: none; }
+  .scissors-right { display: block !important; top: 10%; right: 5%; }
+  .scissors-left { display: block !important; bottom: 10%; left: 5%; }
   .brush-top { display: none; }
-  .brush-bottom { display: none; }
-  .scissors-booking { display: none; }
 
   /* Section Titles */
   h2 { font-size: 2.2rem !important; }
