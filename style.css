@@ -162,6 +162,7 @@ a {
 .floating {
   z-index: 20; 
 }
+.scissors-bottom, .brush-bottom-hero { display: none; }
 .brush-left { top: 15%; left: 8%; }
 .scissors-right { top: 40%; right: 15%; }
 .brush-top { top: 20%; right: 30%; }
@@ -729,12 +730,14 @@ section {
        0 5px 15px rgba(0,0,0,1) !important;
   }
   
-  /* Subtle Floating Elements on Mobile */
-  .floating { opacity: 0.3 !important; }
-  .floating img { width: 80px !important; }
+  /* Side-by-Side Floating Icons on Mobile (Visible) */
+  .floating { opacity: 0.7 !important; }
+  .floating img { width: 100px !important; }
   .brush-left { left: 5%; top: 15%; }
   .scissors-right { display: block !important; top: 10%; right: 5%; }
-  .scissors-left { display: block !important; bottom: 10%; left: 5%; }
+  .scissors-bottom { display: block !important; bottom: 10%; right: 5%; }
+  .brush-bottom-hero { display: block !important; bottom: 10%; left: 5%; }
+  .scissors-left { display: none; }
   .brush-top { display: none; }
 
   /* Section Titles */
