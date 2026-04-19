@@ -148,7 +148,7 @@ a {
      2px -2px 0 #ffcc00,
     -2px  2px 0 #ffcc00,
      2px  2px 0 #ffcc00,
-     0 10px 40px rgba(0,0,0,1);
+     0 15px 50px rgba(0,0,0,1);
 }
 
 .hero-chair-main {
@@ -742,33 +742,34 @@ section {
   .nav-links { display: none; }
   .hamburger { display: block; }
   
-  /* HERO CENTERED SCALING */
-  .hero { min-height: 70vh; }
+  /* FINAL GREEN CIRCLE FIX */
+  .hero { min-height: 90vh; }
+  .hero-centered-title {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
   .hero-centered-title h1 {
     font-size: 13vw !important;
-    text-shadow: 
-      -1px -1px 0 #ffcc00,  
-       1px -1px 0 #ffcc00,
-      -1px  1px 0 #ffcc00,
-       1px  1px 0 #ffcc00,
-       0 5px 15px rgba(0,0,0,1) !important;
   }
   .hero-chair-main {
-    top: 50%;
+    top: 65% !important; /* Moved exactly where you marked in green */
     left: 50%;
     transform: translate(-50%, -50%) !important;
-    opacity: 0.5; /* Slightly less opaque on mobile to keep text clear */
+    opacity: 1 !important; /* Full visibility */
   }
   .hero-chair-main img {
-    width: 85vw !important;
+    width: 80vw !important; /* Big size */
   }
   
-  /* Floating Elements on Mobile */
-  .floating { opacity: 0.6 !important; }
-  .floating img { width: 80px !important; }
-  .scissors-right { top: 15%; right: 8%; display: block !important; }
-  .brush-top-left { top: 10%; left: 8%; display: block !important; }
-  .scissors-bottom { bottom: 10%; right: 8%; display: block !important; }
+  /* Floating elements adjustments */
+  .floating { opacity: 0.7 !important; }
+  .floating img { width: 90px !important; }
+  .scissors-right { top: 10%; right: 10%; }
+  .brush-top-left { top: 10%; left: 8%; }
+  .scissors-bottom { bottom: 15%; right: 10%; }
 
   /* Section Titles */
   h2 { font-size: 2.2rem !important; }
