@@ -150,6 +150,10 @@ a {
      0 10px 30px rgba(0,0,0,0.9);
 }
 
+.floating {
+  z-index: 20; /* Place over the text */
+}
+
 .hero-fade-bottom {
   position: absolute;
   bottom: 0;
