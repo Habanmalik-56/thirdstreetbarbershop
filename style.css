@@ -742,34 +742,50 @@ section {
   .nav-links { display: none; }
   .hamburger { display: block; }
   
-  /* FINAL GREEN CIRCLE FIX */
-  .hero { min-height: 90vh; }
+  /* MOBILE HERO FINAL */
+  .hero { min-height: 100vh; }
+
+  /* Name: center, slightly lower, big and clear */
   .hero-centered-title {
     position: absolute;
-    top: 22%;
+    top: 32%;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 90%;
+    text-align: center;
+    z-index: 15;
   }
   .hero-centered-title h1 {
-    font-size: 13vw !important;
+    font-size: 14vw !important;
+    line-height: 1 !important;
+    text-shadow:
+      -3px -3px 0 #ffcc00,
+       3px -3px 0 #ffcc00,
+      -3px  3px 0 #ffcc00,
+       3px  3px 0 #ffcc00,
+       0 0 30px rgba(0,0,0,1) !important;
   }
+
+  /* Chair: SAME position (65%), just bigger */
   .hero-chair-main {
-    top: 65% !important; /* Moved exactly where you marked in green */
-    left: 50%;
+    top: 65% !important;
+    left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    opacity: 1 !important; /* Full visibility */
+    opacity: 1 !important;
+    z-index: 2 !important;
   }
   .hero-chair-main img {
-    width: 80vw !important; /* Big size */
+    width: 95vw !important;
   }
-  
-  /* Floating elements adjustments */
-  .floating { opacity: 0.7 !important; }
-  .floating img { width: 90px !important; }
-  .scissors-right { top: 10%; right: 10%; }
-  .brush-top-left { top: 10%; left: 8%; }
-  .scissors-bottom { bottom: 15%; right: 10%; }
+
+  /* Floating elements: bigger brush */
+  .floating { opacity: 0.8 !important; }
+  .brush-top-left img { width: 160px !important; }
+  .scissors-right img { width: 110px !important; }
+  .scissors-bottom img { width: 110px !important; }
+  .scissors-right { top: 10%; right: 5%; }
+  .brush-top-left { top: 8%; left: 5%; }
+  .scissors-bottom { bottom: 12%; right: 8%; }
 
   /* Section Titles */
   h2 { font-size: 2.2rem !important; }
