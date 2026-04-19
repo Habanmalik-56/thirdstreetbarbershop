@@ -142,7 +142,7 @@ a {
   margin-right: 5vw;
 }
 .bg-word:nth-child(2) {
-  margin-left: 18vw;
+  margin-left: 10vw; /* Reduced slightly for desktop to be more compact */
 }
 .bg-word {
   font-family: 'Arial Black', Impact, var(--font-heading);
@@ -735,16 +735,36 @@ section {
   .hamburger { display: block; }
   
   /* Hero Refinement */
-  .hero { min-height: 80vh; padding-top: 100px; display: flex; align-items: flex-end; justify-content: center; }
+  .hero { min-height: 100vh; padding-top: 80px; display: flex; align-items: center; justify-content: center; }
   .hero-bg-text { 
     z-index: 1; 
-    top: 30% !important; 
+    top: 35% !important; 
     transform: translateY(-50%);
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
   }
-  .bg-word { font-size: 18vw !important; line-height: 0.9; }
-  .hero-barber { height: 60vh !important; z-index: 2; transform: none !important; margin-left: auto; margin-right: auto; }
+  .bg-word:nth-child(1), .bg-word:nth-child(2) {
+    margin: 0 !important;
+  }
+  .bg-word { 
+    font-size: 20vw !important; 
+    line-height: 0.8; 
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 0 20px rgba(0,0,0,0.8), 2px 2px 0 rgba(0,0,0,0.5);
+    letter-spacing: -2px;
+  }
+  .hero-barber { 
+    height: 70vh !important; 
+    z-index: 2; 
+    transform: none !important; 
+    margin-left: auto; 
+    margin-right: auto;
+    filter: drop-shadow(0 0 30px rgba(0,0,0,0.9));
+  }
   
   /* Floating Elements */
   .floating img { width: 80px !important; opacity: 0.6; }
