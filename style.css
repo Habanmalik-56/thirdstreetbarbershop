@@ -135,23 +135,26 @@ a {
   transform: translate(-50%, -50%);
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   z-index: 1;
 }
 .bg-word:nth-child(1) {
-  margin-right: 5vw;
+  margin: 0;
 }
 .bg-word:nth-child(2) {
-  margin-left: 10vw; /* Reduced slightly for desktop to be more compact */
+  margin: 0;
 }
 .bg-word {
   font-family: 'Arial Black', Impact, var(--font-heading);
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: 900;
-  line-height: 0.9;
+  line-height: 0.85;
   color: #fff;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .hero-image-wrap {
   position: absolute;
@@ -734,52 +737,40 @@ section {
   .nav-links { display: none; }
   .hamburger { display: block; }
   
-  /* Hero Refinement */
-  .hero { min-height: 90vh; padding-top: 80px; display: flex; align-items: center; justify-content: center; }
+  /* Hero Refinement - Plain Text Version */
+  .hero { min-height: 70vh; padding-top: 120px; display: flex; align-items: center; justify-content: center; }
+  .hero-image-wrap { display: none; }
   .hero-bg-text { 
     z-index: 1; 
-    top: 35% !important; 
-    transform: translateY(-50%);
+    position: relative;
+    top: auto !important; 
+    transform: none !important;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
-    gap: 0;
-  }
-  .bg-word:nth-child(1) {
-    margin: 0 !important;
-    align-self: flex-start;
-    text-align: left;
-  }
-  .bg-word:nth-child(2) {
-    margin: 0 !important;
-    align-self: flex-end;
-    text-align: right;
-    margin-top: -3vh !important; /* Tighten the stack vertical overlap */
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0 5%;
   }
   .bg-word { 
-    font-size: 16vw !important; /* Perfect size for split layout without truncation */
-    line-height: 0.8; 
-    color: rgba(255,255,255,0.95);
-    /* Distressed/Classic Effect */
-    text-shadow: 
-      2px 2px 0px rgba(0,0,0,0.3),
-      0 0 20px rgba(0,0,0,0.6),
-      -1px -1px 0 rgba(255,255,255,0.4);
-    letter-spacing: -1px;
-    font-weight: 900;
-  }
-  .hero-barber { 
-    height: 65vh !important; 
-    z-index: 2; 
-    transform: none !important; 
-    margin-left: auto; 
-    margin-right: auto;
-    filter: drop-shadow(0 0 30px rgba(0,0,0,0.9));
+    font-size: 14vw !important; 
+    line-height: 0.9 !important; 
+    color: #fff;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.9);
+    text-align: center;
+    white-space: normal !important;
   }
   
-  /* Floating Elements */
-  .floating img { width: 80px !important; opacity: 0.6; }
+  /* Floating Elements Subtle */
+  .floating { opacity: 0.35 !important; }
+  .floating img { width: 110px !important; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5)) !important; }
+  .brush-left { left: 10%; top: 15%; }
+  .scissors-right { display: block !important; top: 20%; right: 10%; }
+  .scissors-left { display: block !important; top: 65%; left: 15%; }
+  .brush-top { display: block !important; top: 75%; right: 15%; }
+  .brush-bottom { display: none; }
+  .scissors-booking { display: none; }
   .brush-left { left: 5%; top: 15%; }
   .scissors-right { display: none; }
   .brush-top { display: none; }
